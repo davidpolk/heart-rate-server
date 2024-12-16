@@ -21,11 +21,11 @@ Simply click on the Server Link below to run on existing server.
 ## Links
 
 - Server: http://ec2-18-217-150-189.us-east-2.compute.amazonaws.com:3000/signup.html
-- Pitch Video: 
-- Demo Video: 
+- Pitch Video: https://youtu.be/zH7WXAEcWbQ
+- Demo Video: https://youtu.be/U_r2pbIar04 
+
+## Existing Account
+-Username:
+-Password: 
 
 
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
