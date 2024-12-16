@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor HR and SPO2 Project</title>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="stylesheets/site.css" rel="stylesheet">
+    <!-- Import Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="blue darken-2">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo">Home</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a href="reference.html">References</a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Team Introduction Section -->
+        <div class="section">
+            <div class="card-panel">
+                <h4 class="blue-text text-darken-4">Team Introduction</h4>
+                <div class="row">
+                    <!-- Team Member 1 -->
+                    <div class="col s12 m4 center-align">
+                        <img src="images/team-member1.jpg" alt="Team Member 1" class="responsive-img" style="width: 150px; height: 200px;">
+                        <p class="team-name blue-text text-darken-4" style="font-weight: bold;">Johsh Kimble</p>
+                        <a href="mailto:joshey220@arizona.edu">joshey220@arizona.edu</a>
+                        <p class="team-bio">Johsh Kimble is a passionate web developer with a focus on front-end technologies. He loves building interactive web applications that improve user experience.</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="col s12 m4 center-align">
+                        <img src="images/team-member2.jpg" alt="Team Member 2" class="responsive-img" style="width: 150px; height: 200px;">
+                        <p class="team-name blue-text text-darken-4" style="font-weight: bold;">David Polk</p>
+                        <a href="mailto:dpolk@arizona.edu">dpolk@arizona.edu</a>
+                        <p class="team-bio">David is a back-end developer who specializes in databases and server-side logic. He ensures the reliability and scalability of the applications we build.</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="col s12 m4 center-align">
+                        <img src="images/team-member3.jpg" alt="Team Member 3" class="responsive-img" style="width: 150px; height: 200px;">
+                        <p class="team-name blue-text text-darken-4" style="font-weight: bold;">Thuan Nguyen</p>
+                        <a href="mailto:thuannguyen@arizona.edu">thuannguyen@arizona.edu</a>
+                        <p class="team-bio">Thuan Nguyen is a UX/UI designer who works closely with the development team to create visually appealing and user-friendly designs for our projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Authentication Section -->
+        <div class="section">
+            <div class="card-panel">
+                <h4 class="blue-text text-darken-4">Login Menu</h4>
+                <div class="collection">
+                    <a href="signup.html" class="collection-item">Sign Up</a>
+                    <a href="login.html" class="collection-item">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <h2>Project Overview</h2>
+        <p>     This web application enables users to monitor their heart rate and blood oxygen levels throughout the day while providing real-time alerts for any values that fall below normal thresholds. The system integrates an Argon IoT device with the MAX30102 Pulse Detection Blood Oxygen Sensor to collect and process data efficiently. The MAX30102 employs advanced optical technology, combining infrared and red LEDs with a photodetector, to measure pulse and oxygen levels via reflected light. The collected data is transmitted to the server through a seamless IoT connection.</p>
+        <p>     In addition to real-time monitoring, the application offers users a weekly summary of their vital statistics, presented in an easy-to-read format. This feature empowers users to track trends over time and make informed decisions about their health. By combining innovative hardware with user-friendly software, the system ensures reliable and accessible health monitoring.</p>
+    </section>
+</body>
+
+<footer>
+    <p>&copy; 2024 Our Project Team</p>
+</footer>
+</html>
+

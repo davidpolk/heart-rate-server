@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HR and SPO2 Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascripts/account.js"></script>
+
+     <!-- Import Google Icon Font -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Import Materialize CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+      <!-- Import Materialize JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- Custom styles -->
+     <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="blue darken-2">
+      <div class="nav-wrapper container">
+          <a href="index.html" class="brand-logo">Home</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <a href="login.html" id="account-link" onclick="logout()">Logout</a>
+              <a href="reference.html">References</a>
+          </ul>
+      </div>
+  </nav>
+    <div class="container">
+      <br/>
+      <h3>Account Information</h3>
+      <br/>
+    </div>
+
+    <!-- Device List Section -->
+    <section class="card-panel">
+      <h5 class="blue-text text-darken-4"> User's Devices </h5>
+      <div>
+        <label for="deviceName">Device Name: </label>
+        <input type="text" id="deviceName" placeholder="Enter Device Name" name="deviceName">
+      </div>
+      <div>
+        <button id="btnAddDevice">Add Device</button>
+      </div>
+      <div id="deviceList" class="collection">
+        <h4>Your Devices</h4>
+        <ul id="deviceItems"></ul>
+      </div>
+    </section>
+
+    <!-- Heart Rate Monitor Section -->
+    <section class="card-panel">
+      <h5 class="blue-text text-darken-4">Heart Rate Monitor Readings</h5>
+      <h6 class="blue-text text-darken-4">Weekly View: Heart Rate</h6>
+      <div class="row">
+          <div class="col s4">
+              <h6>Average:</h6>
+              <div id="avg-heart-rate"></div>
+          </div>
+          <div class="col s4">
+              <h6>Highest:</h6>
+              <div id="max-heart-rate"></div>
+          </div>
+          <div class="col s4">
+              <h6>Lowest:</h6>
+              <div id="min-heart-rate"></div>
+          </div>
+      </div>
+
+      <h6 class="blue-text text-darken-4">Detailed Daily View</h6>
+      <!-- Dropdown Button -->
+      <a class='dropdown-trigger btn' data-target='dropdown1'>Day Selector</a>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <a id="monday">Monday</a>
+        <a id="tuesday">Tuesday</a>
+        <a id="wednesday">Wednesday</a>
+        <a id="thursday">Thursday</a>
+        <a id="friday">Friday</a>
+        <a id="saturday">Saturday</a>
+        <a id="sunday">Sunday</a>
+      </ul>
+
+      <h4 id="selected-day">Monday</h4>
+
+      <div class="row">
+          <div class="col s6">
+              <!-- <h6>Heart Rate Plot</h6> -->
+              <div>
+                  <canvas id="heart-rate-plot"></canvas>
+              </div>
+          </div>
+          <div class="col s6">
+              <!-- <h6>Blood Oxygen Plot</h6> -->
+              <div>
+                  <canvas id="blood-oxygen-plot"></canvas>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Import Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="javascripts/plots.js"></script>
+  <script src="javascripts/app.js"></script>
+
+
+    <script>
+      (function () {
+        if (!window.localStorage.getItem("token")) {
+          window.location.replace("display.html");
+        }
+      })();
+    </script>
+  </body>
+</html>
