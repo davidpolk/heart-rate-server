@@ -3,18 +3,17 @@ The goal of this project was to create a server that would allow users to create
 
 ## Prerequisites
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
+- Download MongoDB and Create a new connection called "authen". Connect to it
+- Download Visual studio code and install "Live Server" extension; This will allow you to run server locally.
 
 ## Usage
 
-1. Download Files
-2. Download MongoDB
-3. Create a new connection called authen and start it
-4. Go Live
+1. Download Files and place them into empty folder
+2. In Visual Studios Code, click File > Open Folder...
+3. Select folder where project is located
+4. Next, select View > Command Pallet (Ctlr + Shift + p) and type "Live Server: Open with Live Server"
+  or 
+4. CLick on "Go Live" on the bottom right corner. 
 
 or Simply go to "Server_Link"
 
