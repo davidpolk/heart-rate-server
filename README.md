@@ -20,7 +20,7 @@ Simply go to "Server_Link" to run on existing server.
 
 ## Links
 
-- Server: 
+- Server: http://ec2-18-217-150-189.us-east-2.compute.amazonaws.com:3000/signup.html
 - Pitch Video: 
 - Demo Video: 
 
