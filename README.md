@@ -15,7 +15,7 @@ The goal of this project was to create a server that would allow users to create
 5. Or click on "Go Live" on the bottom right corner. 
 
 or 
-Simply go to "Server_Link" to run on existing server.
+Simply click on the Server Link below to run on existing server.
 
 
 ## Links
