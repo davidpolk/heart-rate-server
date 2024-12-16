@@ -25,7 +25,7 @@ Simply click on the Server Link below to run on existing server.
 - Demo Video: https://youtu.be/U_r2pbIar04 
 
 ## Existing Account
--Username: abc123@gmail.com
--Password: Asdasd123@
+- Username: abc123@gmail.com
+- Password: Asdasd123@
 
 
