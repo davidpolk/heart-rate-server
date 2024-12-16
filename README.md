@@ -10,9 +10,9 @@ The goal of this project was to create a server that would allow users to create
 
 1. Download Files and place them into empty folder
 2. In Visual Studios Code, click File > Open Folder...
-3. Select folder where project is located
-4. -Next, select View > Command Pallet (Ctlr + Shift + p) and type "Live Server: Open with Live Server"
-5. or Click on "Go Live" on the bottom right corner. 
+3. Select folder where project is located and click Open
+4. In Visual Studios Code, click View > Command Pallet (Ctlr + Shift + p) and type "Live Server: Open with Live Server"
+5. Or click on "Go Live" on the bottom right corner. 
 
 or 
 Simply go to "Server_Link" to run on existing server.
